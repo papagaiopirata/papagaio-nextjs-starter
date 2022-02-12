@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Home from '../';
+import Home from '@/pages/home';
 
 describe('Creating tests for Home', () => {
   it('Renders a heading', () => {
