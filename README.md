@@ -32,7 +32,7 @@
 - 👷 PR Workflow — Run Type Check & Linters on all Pull Requests
 - ⚙️ EditorConfig - Maintain consistent coding styles across editors and IDEs
 - 🗂 Path Mapping — Import components or images using the `@` prefix
-- 🗂 Next Jest — Configure setup testing in nextjs
+- ✅ Next Jest — Configure setup testing in nextjs
 
 ## Quick Start
 
