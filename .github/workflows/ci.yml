@@ -19,16 +19,22 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
 
       - name: Install dependencies (with cache)
         uses: bahmutov/npm-install@v1
+
+      - name: Check tests
+        run: yarn test
 
       - name: Check types
         run: yarn type-check
 
       - name: Check linting
         run: yarn lint
+
+      - name: Check format
+        run: yarn format
 
       - name: Check commits messages
         uses: wagoid/commitlint-github-action@v4
