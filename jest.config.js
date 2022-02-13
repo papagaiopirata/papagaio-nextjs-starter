@@ -9,6 +9,10 @@ const customJestConfig = {
   moduleNameMapper: {
     '^@/pages/(.*)$': '<rootDir>/src/pages/$1',
   },
+  coveragePathIgnorePatterns: [
+    '<rootDir>/src/tests',
+    '<rootDir>/node_modules/',
+  ],
   testEnvironment: 'jest-environment-jsdom',
 };
 
